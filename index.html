@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>How-Codes? Take</title>
+            <style>
+                body {
+                    background: rgb(112,47,47);
+                    background: linear-gradient(90deg, rgba(31, 14, 14,1) 0%, rgba(0,0,0,1) 50%, rgba(6, 16, 18,1) 100%);
+                    font-family: arial;
+                    color: rgb(255, 255, 255);
+                }
+                .center {
+                    text-align: center;
+                }
+                .game {
+                    background-color: rgb(7.5, 7.5, 7.5);
+                    width: 40%;
+                    margin-left: 5%;
+                    height: 140px;
+                    float: left;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+                nav {
+                    display: flex;
+                    margin-left: 10%;
+                    width: 85%;
+                    height: 50px;
+                    border-radius: 5px;
+                    line-height: 48px;
+                    justify-content: space-evenly;
+                    background-color: rgb(3, 3, 3);
+                    font-size: 17px;
+                }
+                .scene {
+                    
+                }
+            </style>
+    </head>
+    <body>
+        <nav style = "position: absolute">
+            <a href = 'javascript: changePage(0);'>About</a>
+            <a href  = 'javascript: changePage(1);'>Members</a>
+            <a href = 'javascript: changePage(2);'>Join</a>
+            <a href = 'javascript: changePage(3);'>Games</a>
+        </nav>
+        <h2>SC<br>WW</h2>
+        <div class = "scene">
+            <h1 class = "center">About</h1>
+            <p class = "center">The SCWW is for coders that want to have more interaction, better programs, bigger ideas, and more things. When you work together on a WebPage, you can get more things done, and faster. That is the big idea for founding The SCWW. Now I realise that I never told you guys what it means. Welcome to the Super Codifull Workschop Wonderland! This is written by Mr. Crazy Type Dude!<br><h6 class = "center">(Web Page Made by How-Code?)</h6></p>
+            <br>
+            <h4 class = "center">How-Code? does not like this part</h4>
+        </div>
+        <div class = "scene">
+            <h1 class = "center">Members</h1>
+            <h3 class = "center"><br> No People pending</h3>
+            <hr>
+            <h3 class = "center">People</h3>
+            <h4 style = "margin-left: 10%;">Name - Level - Position - Projects</h4>
+            <ul style = "margin-left: 4%;">
+                >Mr. Crazy Type Dude - [Undefined*] - [Team Leader] - [0]
+                <br>
+                >BC - [Undefined*] - [Lead Coder] - [0]
+                <br>
+                >How-Code - [Intermediate] - [Coder] - [2]
+            </ul>
+            <p class = "center">*Has made no prjects to compare to</p>
+        </div>
+        <div class = "scene">
+            <p class = "center">Go to SCWW's Khan page and type a . in the subscribe section.</p>
+        </div>
+        <div class = "scene">
+            <div class = "game">
+                <h3 class = "center">Game Title</h3>
+                <hr>
+                <p class = "center">
+                Link [Khan Game]: 
+                <a href = "https://www.khanacademy.org/computer-programming/game/5255040624279552">Game</a><br>
+                Link 2 [Actual Game]: 
+                <a href = "https://www.khanacademy.org/computer-programming/game/5255040624279552">Game</a>
+                </p>
+            </div>
+            <div class = "game">
+                <h3 class = "center">None</h3>
+                <hr>
+                <p class = "center">
+                Link: 
+                <a href = "">Game</a><br>
+                </p>
+            </div>
+        </div>
+        <!--Hide and unhide thigns-->
+        <script>
+            var scenes = document.getElementsByClassName('scene');
+            function changePage(index) {
+                window.scroll(0, 0);
+                for (var i = 0; i < scenes.length ; i++) {
+                    scenes[i].style.display = 'none';
+                    scenes[i].style.animation = 'animPage 2500ms forwards';
+                }
+                scenes[index].style.display = 'block';
+            };
+            changePage(0);
+    
+        </script>
+    </body>
+</html>
